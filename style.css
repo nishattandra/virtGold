@@ -59,7 +59,7 @@ body {
 
 .bannerPara {
   display: flex;
-  width: 1229.92px;
+  width: 100%;
   align-items: flex-start;
   gap: 13.78px;
 }
@@ -160,63 +160,6 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-/* Collapse Section */
-.collapseSection {
-  width: 1229.92px;
-  height: 203.624px;
-  border-radius: 20px;
-  background: linear-gradient(180deg, #1d182d 0%, rgba(29, 24, 45, 0) 100%);
-  margin: auto;
-  margin-top: 36px;
-}
-
-.input {
-  display: flex;
-  justify-content: space-between;
-  padding: 13px 25px;
-  align-items: center;
-  margin-left: 10px;
-  flex: 1 0 0;
-  border-radius: 300px;
-  border: 1px solid #3c4a64;
-  background: rgba(31, 32, 60, 0.1);
-}
-
-.min,
-.max {
-  width: 50px;
-  display: flex;
-  margin: 0px 10px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #3c4a64;
-  border-radius: 4px;
-  background: #1d182d;
-}
-
-.mark {
-  width: 50px;
-  display: flex;
-  padding: 4px 9.97px 4px 10.03px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border-radius: 5px;
-  background: #fcab00;
-  margin: 0px 10px;
-}
-
-.btn {
-  display: flex;
-  padding: 11px 18.28px 11px 17px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 300px;
-  border: 1px solid #fcab00;
-  background: #fcab00;
-  margin-left: 10px;
-}
 
 /* Search section */
 .searchSection {
@@ -234,18 +177,6 @@ body {
   margin-top: 25px;
 }
 
-.searchBar {
-  display: flex;
-  padding: 13px 20px;
-  align-items: flex-start;
-  flex: 1 0 0;
-  border-radius: 300px;
-  border: 1px solid #3c4a64;
-  background: rgba(31, 32, 60, 0.1);
-  margin-top: 25px;
-  margin-left: 400px;
-  margin-right: 20px;
-}
 
 .searchName {
   color: rgba(255, 255, 255, 0.4);
@@ -291,6 +222,7 @@ body {
   width: 236.134px;
   height: 399px;
   flex-shrink: 0;
+  gap: 100px;
   border-radius: 10px;
   border: 1px solid rgba(252, 171, 0, 0.3);
   background: #1d182d;
@@ -666,7 +598,7 @@ body {
     width: 100%;
     height: 300px;
     background: none;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 
   .home {
@@ -724,7 +656,7 @@ body {
     height: 200px;
     background: none;
     gap: 15px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 
   .secondCheckBox {
@@ -733,25 +665,9 @@ body {
     height: 600px;
     gap: 15px;
     background: none;
-    padding-left: 10px;
+    padding-left: 15px;
   }
 
-  /* Collapse Section */
-  .collapseSection {
-    width: 100%;
-    height: 400px;
-  }
-
-  .input {
-    width: 100px;
-  }
-
-  .btn {
-    width: 100px;
-    height: 40px;
-    margin-top: 20px;
-    margin-left: 10px;
-  }
 
   /* Search Section */
   .searchSection {
@@ -759,15 +675,16 @@ body {
   }
 
   .searchBar {
-    margin: 0px 10px;
+    margin-left: 15px;
   }
 
   .searchItem {
-    margin-left: 10px;
+    margin-left: 15px;
+    font-size: 24px;
   }
 
   .circle {
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 15px;
   }
 
@@ -787,17 +704,17 @@ body {
   }
 
   .card {
-    width: 180px;
+    width: 170px;
     height: 399px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
 
   .buyBtn {
-    width: 150px;
+    width: 140px;
   }
 
   .addCartBtn {
-    width: 150px;
+    width: 140px;
   }
 
   /* News Section */
@@ -819,13 +736,16 @@ body {
 
   /* Question Section */
   .questionContainer {
-    width: 100%;
-    margin-top: 50px;
-    margin-left: 5px;
+    width: 350px;
+    margin: 50px 15px 0px 15px;
+  }
+
+  .question{
+    font-weight: 500px;
   }
 
   .answer {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 250;
   }
 
