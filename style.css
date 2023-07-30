@@ -427,7 +427,7 @@ body {
   height: 444px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-shrink: 0;
   background: rgba(255, 255, 255, 0.1);
 }
@@ -484,6 +484,7 @@ body {
   align-items: flex-start;
   gap: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0px 10px;
 }
 
 .secondDiv h4 {
@@ -493,6 +494,96 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 13px;
+}
+
+.secondDiv h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.secondDiv p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.secondDiv h5 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+}
+
+.swipperBtn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.swipperCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.swipperCircleFill {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  opacity: 0.30000001192092896;
+  background: #fff;
+}
+
+/* Last Section */
+.lastSection {
+  width: 700px;
+  height: 300px;
+  gap: 8px;
+  margin-top: 50px;
+}
+
+.lastSection h1 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+.lastSection p {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19.2px;
+  margin-top: 30px;
+}
+
+.lastSection button {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  width: 259px;
+  height: 52px;
+  padding: 11px 13px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 300px;
+  border: 1px solid #fcab00;
+  background: #fcab00;
 }
 
 /* footer */
@@ -709,6 +800,23 @@ body {
     width: 150px;
   }
 
+  /* News Section */
+  .news {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    flex: none;
+  }
+
+  .newsContainer {
+    display: none;
+  }
+
+  .trustpilot {
+    margin: auto;
+    background: none;
+  }
+
   /* Question Section */
   .questionContainer {
     width: 100%;
@@ -721,10 +829,22 @@ body {
     font-weight: 250;
   }
 
+  /* Last Section */
+  .lastSection {
+    width: 100%;
+    height: 400px;
+    gap: 8px;
+    margin-top: 50px;
+  }
+
+  .lastSection h1 {
+    font-size: 24px;
+  }
+
   /* footer */
   .footer {
     width: 100%;
-    height: 927.684px;
+    height: 1000px;
   }
 
   .firstGrid {
