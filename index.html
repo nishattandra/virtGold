@@ -11,11 +11,33 @@
 
         <style>
                 input[type=checkbox] {
-                  accent-color: #fcab00;
+                  appearance: none;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                  position: relative;
+                }
+                input[type="checkbox"]:checked {
+                  background-color: #fcab00; 
+                  accent-color:#fcab00;
+                }
+
+                input[type="checkbox"]:checked::before {
+                  content: "\2713"; 
+                  position: absolute;
+                  font-weight: bold;
+                  color: black; /* Color of the checkmark */
+                  font-size: 20px;
+                  line-height: 1;
                 }
 
                 input[type=radio] {
-                  accent-color: #fcab00;
+                    appearance: none;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                }
+
+                input[type="radio"]:checked {
+                  background-color: #fcab00; 
                 }
             </style>
     </head>
@@ -139,7 +161,8 @@
                                     <div
                                         class="flex items-center gap-[6px] cursor-pointer"
                                         onclick="hideCurrencyMenuMobile()">
-                                        <img src="./assets/Home/dollar.png"
+                                        <img
+                                            src="./assets/images/header/dollar.png"
                                             alt="dollar" />
                                         <div class="flex items-center gap-[6px]">
                                             <span class id="currencyMobile">USD</span>
@@ -195,33 +218,37 @@
         <body>
             <!--banner -->
             <section class="banner md:relative md:z-10">
-                <div class="home">
-                    <h2>Home</h2>
-                    <p>></p>
-                    <p>Diablo 4 Items</p>
-                </div>
-                <div class="heading">
-                    <h1>Diablo 4 Items</h1>
-                </div>
-                <div class="bannerPara">
-                    <button class="para1">Diablo 4 Gold</button>
-                    <button class="para2">Diablo 4 Items</button>
-                    <button class="para3">Diablo 4 Boosting</button>
-                </div>
-                <div>
-                    <h1 class="text-white mt-5">Server</h1>
-                    <div class="flex tab">
-                        <div class="flex tabParent">
-                            <h2 class="tab1 font-semibold">Season 1 - Softcore</h2>
-                            <h2 class="tab2 text-white font-semibold">Eternal -
-                                Softcore</h2>
+                <div class="bannerContainer">
+                    <div class="home">
+                        <h2>Home</h2>
+                        <p>></p>
+                        <p>Diablo 4 Items</p>
+                    </div>
+                    <div class="heading">
+                        <h1>Diablo 4 Items</h1>
+                    </div>
+                    <div class="bannerPara">
+                        <button class="para1">Diablo 4 Gold</button>
+                        <button class="para2">Diablo 4 Items</button>
+                        <button class="para3">Diablo 4 Boosting</button>
+                    </div>
+                    <div>
+                        <h1 class="text-white mt-5">Server</h1>
+                        <div class="flex tab">
+                            <div class="flex tabParent">
+                                <h2 class="tab1 font-semibold">Season 1 -
+                                    Softcore</h2>
+                                <h2 class="tab2 text-white font-semibold">Eternal
+                                    -
+                                    Softcore</h2>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="hidden lg:flex justify-between absolute top-0 left-0 right-0">
-                    <img src="./assets/images/banner/top-left.svg" alt>
-                    <img src="./assets//images/banner/top-right.svg" alt>
+                    <div
+                        class="hidden lg:flex justify-between absolute top-0 left-0 right-0">
+                        <img src="./assets/images/banner/top-left.svg" alt>
+                        <img src="./assets//images/banner/top-right.svg" alt>
+                    </div>
                 </div>
             </section>
             <!-- 1st checkbox section -->
@@ -259,7 +286,7 @@
 
             <!-- 2nd checkbox section -->
             <section
-                class="secondCheckBox mx-auto grid grid-cols-2 md:grid-cols-4">
+                class="secondCheckBox mx-auto grid grid-cols-2 md:grid-cols-4 md:relative md:z-10">
                 <div class="details">
                     <input type="checkbox" class="check" name id>
                     <span class="checkboxName">All</span>
@@ -366,14 +393,14 @@
             <section>
                 <div class="searchSection">
                     <div
-                        class=" flex justify-between items-center gap-2 border border-white border-opacity-25 p-[8px_13px] rounded-[300px] md:w-full mt-16 mx-5 md:mx-auto">
+                        class=" flex justify-between items-center gap-2 border border-white border-opacity-25 p-[15px_13px] rounded-[300px] md:w-full mt-16 mx-5 md:mx-auto">
                         <input
                             type="text"
                             placeholder="Search"
                             class="bg-transparent text-sm focus:pl-4 max-w-full duration-300 border-0 outline-o focus:outline-0 placeholder:opacity-70 w-full text-white" />
                         <button>
                             <i
-                                class="fa-solid fa-magnifying-glass opacity-70"></i>
+                                class="fa-solid fa-magnifying-glass text-white opacity-70"></i>
                         </button>
                     </div>
                     <div class>
@@ -850,7 +877,7 @@
                                     it actually makes it a lot…</p>
                             </div>
                         </div>
-                        <div class="firstNews mt-7">
+                        <div class="firstNews mt-5">
                             <img class="newsImg"
                                 src="./assets/images/news/1.png" alt>
                             <div>
@@ -990,9 +1017,25 @@
                             <h5>Robert Lockar...1 hour ago</h5>
                         </div>
                         <div
-                            class="flex justify-between items-center mt-16">
-                            <button class="swipperBtn"><i
-                                    class="fa-solid fa-circle-chevron-left"></i></button>
+                            class="flex justify-around items-center mt-16">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" viewBox="0 0 25 25" fill="none">
+                                <g clip-path="url(#clip0_4_9834)">
+                                    <path
+                                        d="M12.4111 24.0273C18.7624 24.0273 23.9111 18.8786 23.9111 12.5273C23.9111 6.17607 18.7624 1.02734 12.4111 1.02734C6.05986 1.02734 0.911133 6.17607 0.911133 12.5273C0.911133 18.8786 6.05986 24.0273 12.4111 24.0273Z"
+                                        stroke="white" stroke-opacity="0.3" />
+                                    <path
+                                        d="M10.92 12.5273L14.2281 9.50283C14.4722 9.27968 14.4722 8.91787 14.2281 8.69471C13.984 8.47155 13.5883 8.47155 13.3442 8.69471L9.59419 12.1233C9.35011 12.3464 9.35011 12.7082 9.59419 12.9314L13.3442 16.36C13.5883 16.5831 13.984 16.5831 14.2281 16.36C14.4722 16.1368 14.4722 15.775 14.2281 15.5519L10.92 12.5273Z"
+                                        fill="white" fill-opacity="0.3" />
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_4_9834">
+                                        <rect width="24" height="24"
+                                            fill="white"
+                                            transform="translate(0.411133 0.527344)" />
+                                    </clippath>
+                                </defs>
+                            </svg>
                             <div>
                                 <button class="swipperCircle"></button>
                                 <button class="swipperCircleFill"></button>
@@ -1000,8 +1043,24 @@
                                 <button class="swipperCircleFill"></button>
                                 <button class="swipperCircleFill"></button>
                             </div>
-                            <i
-                                class="fa-solid fa-circle-chevron-right swipperBtn"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" viewBox="0 0 25 25" fill="none">
+                                <g clip-path="url(#clip0_4_9847)">
+                                    <path
+                                        d="M12.4111 1.02734C6.05986 1.02734 0.911133 6.17607 0.911133 12.5273C0.911133 18.8786 6.05986 24.0273 12.4111 24.0273C18.7624 24.0273 23.9111 18.8786 23.9111 12.5273C23.9111 6.17607 18.7624 1.02734 12.4111 1.02734Z"
+                                        stroke="white" stroke-opacity="0.6" />
+                                    <path
+                                        d="M13.9022 12.5273L10.5942 15.5519C10.3501 15.775 10.3501 16.1368 10.5942 16.36C10.8383 16.5831 11.234 16.5831 11.4781 16.36L15.2281 12.9314C15.4722 12.7082 15.4722 12.3464 15.2281 12.1233L11.4781 8.69471C11.234 8.47156 10.8383 8.47156 10.5942 8.69471C10.3501 8.91787 10.3501 9.27968 10.5942 9.50283L13.9022 12.5273Z"
+                                        fill="white" fill-opacity="0.6" />
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_4_9847">
+                                        <rect width="24" height="24"
+                                            fill="white"
+                                            transform="matrix(-1 0 0 -1 24.4111 24.5273)" />
+                                    </clippath>
+                                </defs>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -1121,6 +1180,18 @@
         const currencyMenu = document.getElementById("currencyMenuMobile");
         currencyMenu.classList.toggle("hidden");
       }
+
+      const openMenuButton = document.getElementById("openMenu");
+      const menuList = document.getElementById("menuList");
+      openMenuButton.addEventListener("click", () => {
+        menuList.classList.toggle("hidden");
+      });
+      const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
                       </script>
                 </body>
             </html>

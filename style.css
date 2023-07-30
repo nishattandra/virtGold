@@ -17,7 +17,12 @@ body {
   background: linear-gradient(180deg, rgba(39, 33, 60, 0.8) 0%, #27213c 100%),
     url(./assets/images/banner/bannerImage.png);
   background-size: cover;
-  padding-left: 136px;
+  margin: auto;
+}
+
+.bannerContainer {
+  width: 1240.92px;
+  margin: auto;
 }
 
 .home {
@@ -59,7 +64,7 @@ body {
 
 .bannerPara {
   display: flex;
-  width: 100%;
+  width: 1240.92px;
   align-items: flex-start;
   gap: 13.78px;
 }
@@ -138,7 +143,6 @@ body {
   flex-shrink: 0;
   border-radius: 3px;
   border: 2px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
 }
 
 .checkboxName {
@@ -160,7 +164,6 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-
 /* Search section */
 .searchSection {
   width: 1229.92px;
@@ -176,7 +179,6 @@ body {
   line-height: normal;
   margin-top: 25px;
 }
-
 
 .searchName {
   color: rgba(255, 255, 255, 0.4);
@@ -199,7 +201,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 20px;
-  border: 2px solid #fff;
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .circleOption {
@@ -350,7 +352,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 35px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .trustpilot {
@@ -370,7 +372,7 @@ body {
   width: 850px;
   padding: 10px;
   align-items: flex-start;
-  gap: 10px;
+  gap: 5px;
   border-radius: 5px;
   background: #fff;
 }
@@ -453,12 +455,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 12px;
-}
-
-.swipperBtn {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
 }
 
 .swipperCircle {
@@ -601,6 +597,11 @@ body {
     padding-left: 15px;
   }
 
+  .bannerContainer {
+    width: 100%;
+    margin: auto;
+  }
+
   .home {
     display: none;
   }
@@ -667,7 +668,6 @@ body {
     background: none;
     padding-left: 15px;
   }
-
 
   /* Search Section */
   .searchSection {
@@ -740,7 +740,7 @@ body {
     margin: 50px 15px 0px 15px;
   }
 
-  .question{
+  .question {
     font-weight: 500px;
   }
 
