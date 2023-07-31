@@ -42,7 +42,7 @@
             </style>
     </head>
     <body>
-        <header>
+        <header class="md:relative md:z-10">
             <!-- Top Bar Section -->
             <article
                 class="hidden h-[37px] lg:flex justify-center items-center bg-gradient-to-r from-[#FEAF04] from-100% via-[#D98D1B] via-1000% to-[#FFD056] to-90%">
@@ -217,8 +217,15 @@
         </header>
         <body>
             <!--banner -->
-            <section class="banner md:relative md:z-10">
-                <div class="bannerContainer">
+            <section class="banner">
+                <div
+                    class="hidden lg:flex justify-between absolute top-0 left-0 right-0 ">
+                    <img src="./assets/images/banner/banner-left.png"
+                        class="w-48 h-[370px] hidden md:block" alt>
+                    <img src="./assets/images/banner/banner-right.png"
+                        class="w-48 h-[370px] hidden md:block" alt>
+                </div>
+                <div class="bannerContainer relative">
                     <div class="home">
                         <h2>Home</h2>
                         <p>></p>
@@ -243,11 +250,6 @@
                                     Softcore</h2>
                             </div>
                         </div>
-                    </div>
-                    <div
-                        class="hidden lg:flex justify-between absolute top-0 left-0 right-0">
-                        <img src="./assets/images/banner/top-left.svg" alt>
-                        <img src="./assets//images/banner/top-right.svg" alt>
                     </div>
                 </div>
             </section>

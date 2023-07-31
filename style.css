@@ -84,6 +84,16 @@ body {
   margin-top: 41px;
 }
 
+.para1:hover {
+  background: #fcab00;
+  color: black;
+}
+
+.para3:hover {
+  background: #fcab00;
+  color: black;
+}
+
 .para2 {
   padding: 11px 18.28px 11px 17px;
   border-radius: 300px;
@@ -97,6 +107,12 @@ body {
   font-weight: 700;
   line-height: 22px;
   margin-top: 41px;
+}
+
+.para2:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #393131;
+  color: white;
 }
 
 .tabParent {
@@ -272,6 +288,12 @@ body {
   background: #fcab00;
 }
 
+.buyBtn:hover{
+  border: 1px solid #fcab00;
+  background: transparent;
+  color: #fcab00;
+}
+
 .addCartBtn {
   display: flex;
   width: 191px;
@@ -281,6 +303,12 @@ body {
   border-radius: 300px;
   border: 1px solid #fcab00;
   color: #fcab00;
+}
+
+.addCartBtn:hover{
+  border: 1px solid #fcab00;
+  background: #fcab00;
+  color: black;
 }
 
 /* Question Section */
